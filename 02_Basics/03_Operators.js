@@ -16,3 +16,11 @@ console.log("Discount percentage is : " + discountPercent);
 
 displayDiscountPercentage = Math.round(discountPercent)
 console.log(displayDiscountPercentage + "% off");
+
+var result = listingPrice > sellingPrice;
+
+console.log(typeof result);
+
+// Operator precedence
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
