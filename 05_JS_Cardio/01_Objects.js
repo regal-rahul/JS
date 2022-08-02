@@ -1,5 +1,5 @@
 var User = function (firstName, projectCount) {
-    this.firstName = firstName;
+    this.firstNamee = firstName;
     this.projectCount = projectCount;
     this.getProjectCount = function () {
         console.log(`Course count is: ${this.projectCount}`);
@@ -14,9 +14,12 @@ User.prototype.getFirstName = function () {
 var rahul = new User("rahul", 9);
 rahul.getProjectCount();
 rahul.getFirstName();
+if (rahul.hasOwnProperty("firstName")) {
+    rahul.getFirstName();
+}
 // console.log(rahul);
 
-var regal = new User("regal", 7);
-regal.getProjectCount();
-regal.getFirstName();
+// var regal = new User("regal", 7);
+// regal.getProjectCount();
+// regal.getFirstName();
 // console.log(regal);
