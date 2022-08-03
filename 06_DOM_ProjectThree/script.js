@@ -8,6 +8,10 @@ const projects = [
         price: "7.2"
     },
     {
+        name: "MEAN project",
+        price: "3"
+    },
+    {
         name: "MERN project",
         price: "9"
     },
