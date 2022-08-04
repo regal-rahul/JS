@@ -1,12 +1,11 @@
 const cards = document.querySelectorAll(".card");
-console.log(cards);
 
 // Variables
 var isFlipped = false;
 var firstCard;
 var secondCard;
 
-cards.forEach((card) => card.addEventListener("click", flip))
+cards.forEach((card) => card.addEventListener("click", flip));
 
 function flip() {
   this.classList.add("flip");
@@ -16,8 +15,6 @@ function flip() {
   } else {
     secondCard = this;
     checkIt();
-    console.log(firstCard);
-    console.log(secondCard);
   }
 }
 
@@ -32,12 +29,14 @@ function checkIt() {
 function success() {
   firstCard.removeEventListener("click", flip);
   secondCard.removeEventListener("click", flip);
+  reset();
 }
 
 function fail() {
   setTimeout(() => {
     firstCard.classList.remove("flip");
     secondCard.classList.remove("flip");
+    reset();
   }, 1000);
 }
 
